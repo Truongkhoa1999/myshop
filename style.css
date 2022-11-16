@@ -1,0 +1,219 @@
+/* general */
+* {
+    box-sizing: border-box!important;
+    text-rendering: optimizeLegibility;
+    -moz-osx-font-smoothing: grayscale;
+    font-kerning: auto;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    /* font-family: sans-serif; */
+    -webkit-text-size-adjust: 100%;
+    font-size: 16px;
+}
+
+
+body {
+    margin: 0;
+
+}
+
+/* fonts' settings */
+@font-face {
+    font-family: 'rubikbold';
+    src: url('font/rubik/rubik-bold-webfont.woff2') format('woff2'),
+        url('font/rubik/rubik-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+a{
+    text-decoration: none;
+}
+/* general settings end */
+#frame1 {
+    display: flex;
+    flex-direction: column;
+    font-family: 'rubikbold';
+    height: 90vh;
+    background-image: url(image/background.webp);
+    background-color: #013026;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+header{
+    padding: 0.5rem;
+}
+.frame1__left{
+    flex-basis: 30%;
+    height: 25rem;
+    /* border: 2px solid black; */
+    background-image: url(image/left.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    }
+    .frame1__right{
+        flex-basis: 70%;
+        /* border: 2px solid white; */
+        display: flex;
+    }
+    .frame1__right__section1{
+        margin: auto;
+    }
+    .frame1__center{
+        width: 100vw;
+        height: auto ;
+        display: flex;
+        /* background-color: blue; */
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        padding: 0.5rem;
+    }
+.frame1--small{
+    font-size: 1rem;
+    color: white;
+}
+.frame1--big{
+    font-size: 4rem;
+    color: white;
+}
+
+header {
+    width: 100vw;
+    height: 60% ;
+    /* background-color: red; */
+    display: flex;
+
+}
+
+nav {
+    width: 100vw;
+    height: 8%;
+    background-color: #013026;
+    font-size: 20px;
+    color: #A1CE3F;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem;
+}
+.nav__right{
+    width: auto;
+    height: 2rem;
+    /* border: 2px red solid; */
+    display: flex;
+}
+ul{
+    width: 30rem;
+    height: 1rem;
+    list-style-type: none;
+    display: flex;
+    margin: auto;
+    /* border: 2px solid white; */
+    font-size: 0.95rem;
+
+}
+li{
+    margin-left: 1rem;
+}
+.nav__left__logo{
+    width: 4rem;
+    height: 3rem;
+    /* border: 2px solid green; */
+    background-image: url(image/LOGO.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.frame1__center__box{
+    display: flex;
+   flex-basis: 30%;
+    font-size: 10px;
+    color: white;
+    /* border: 2px solid green; */
+}
+.box__icon{
+   flex-basis: 30%;
+    /* border: 10px solid white; */
+    background-image: url(image/ic/fly.webp);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.box__content{
+    flex-basis: 70%;
+    /* border: 2px solid yellow; */
+}
+.box__content--small{
+    font-size: 0.5rem;
+}
+.box__content--big{
+    font-size: 2rem;
+}
+/* frame 2 */
+#frame2__filter{
+    min-height: 100vh;
+    text-align: center;
+}
+#input__filter{
+    padding-top: 3rem;
+}
+.filter__data{
+    display: flex;
+    padding: 1rem;
+    flex-wrap: wrap;
+}
+.element__items{
+    width: 340px;
+    height: 350px;
+    border: 1.5px solid grey;
+    margin-bottom: 3rem!important;
+    margin: auto;
+    transition: 0.4s;
+    opacity: 0.7;
+    cursor: pointer;
+    margin-left: 0.5rem;
+}
+.element__items:hover{
+    opacity: 1;
+}
+.element__items img{
+    width: 100%;
+    height: 60%;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+
+}
+.info{
+    padding: 10px;
+    display: flex;
+}
+.info h1{
+    font-size: 1.5rem;
+}
+.price{
+    justify-content: flex-end;
+    display: flex;
+    flex: 1;
+}
+.name__item{
+    justify-content: flex-start;
+    flex: 1;
+    display: flex;
+}
+/* button settings */
+.btn{
+    margin-top: 5rem;
+    background: #013026!important;
+    border: 1px solid black!important;
+}
+.active{
+    background-color: red!important;
+}
